@@ -1,0 +1,28 @@
+
+def snake_it_up(string)
+  if string[0] == "s"
+    10 * "s" + string
+  else
+    string
+  end
+end
+ 
+ 
+ 
+ require 'pry'
+
+def generate_star_date
+  (rand(100000) + 400000) / 10.0
+end
+
+
+def state_log
+  (generate_star_date) 
+  "Captain's Log, star date #{}."
+end
+
+def engage
+  binding.pry 
+  puts state_log(date)
+  date = generate_star_date
+end
